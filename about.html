@@ -7,141 +7,188 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <script src="./js/responsivenav.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
-<style>
-.about {
-  padding: 50px;
-  text-align: center;
-  background-color: #333444;
-  color: white;
-  overflow:hidden;
-}
-.faq {
-  padding: 50px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-</style>
-</head>
-<body>
-<!-- Start på navbar-->
-<div class="navbar" id="mynavbar">
-  <div class="logobutton">
-  <a href="index.html">
-  <img
-  src="images/KLEDI.png"
-  width="45"
-  height="45"
-  id="logo"
-  alt="Logo image"
-  style="float: left" >
-  </a>
-  </div>
-  <div class="dropdown">
-  <button class="dropbtn"
-  onClick="location.href='sortiment.html'">Vårt Sortiment
-  <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content">
-  <a href="sortiment1.html">Innertøy</a>
-  <a href="sortiment2.html">Yttertøy</a>
-  <a href="sortiment3.html">Undertøy</a>
-  </div>
-  </div>
-  <div class="dropdown">
-  <button class="dropbtn"
-  onClick="location.href='Abonnement.html'">Abonnementer
-  <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content">
-  <a href="abonnement.html#abo1">3 Plagg</a>
-  <a href="abonnement.html#abo2">5 Plagg</a>
-  <a href="abonnement.html#abo3">8 Plagg</a>
-  <a href="abonnement.html#abo4">10 Plagg</a>
-  <a href="abonnement.html#abo5">?? Plagg</a>
-  </div>
-  </div>
-  <div class="dropdown">
-  <button class="dropbtn"
-  onClick="location.href='about.html'">Om oss
-  <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content">
-  <a href="delivery.html">Leveranse</a>
-  </div>
-  </div>
-  <a href="test.html">Innlogging</a>
-  <a
-  href="javascript:void(0);"
-  style="font-size: 15px"
-  class="icon"
-  onclick="responsiveNav()"
-  >&#9776;</a
-  >
-</div>
+  </head>
   
-    <div class="content">
-        <div class="header-image">
-            <img class="header-image-jpg" src="./images/robert-collins-tvc5imO5pXk-unsplash3.jpg" alt="Happy children playing outside">
-            <div class="header-text">
-              <h1>KLEDELI</h1>
-            </div>
-          </div>
-<div class="about">
-  <h1>Vår visjon:</h1>
-  <p>Fokuset på miljø og bærekraft er tiltakende blant bedrifter og forbrukere i 2023. Som forbrukere blir vi
-    mer bevist på hva vi kjøper, at produkter og tjenester har et positivt eller nøytralt miljøbidrag, og et
-    bærekraftig fundament.
-    <br>
-    Som del av dette blir vi mer opptatt av å gjenbruke og dele, fremfor å kjøpe nytt. Å kjøpe nytt kan være
-    kostbart, og en stor andel av det som produseres av varer kastes før det er utslitt eller på andre måter
-    ikke er brukbart lenger. Som et eksempel så refereres det i en rapport fra Nosus fra 2020 at norske
-    klesforhandlere sitter igjen med minst 700 tonn årlig av klær og tekstiler som ikke blir solgt (Watson et
-    al. 2020). 
-    <br>
-    I kjølvannet av dette vokser det frem nye produkter og tjenester innenfor det som omtales
-    som delingsøkonomien. Noen eksempler på selskap og tjenester som operer innenfor
-    delingsøkonomien er Nabobil, Kruser, Fjong og Parkdressen.no
-    Selskapet KLEDELI er en oppstartsbedrift i Bergen som planlegger utleie av klær i Norge. I første omgang
-    vil KLEDELI tilby leie av klær til barn i alderen 0 til 12 år. Senere vil de utvide til også å dekke ungdom og
-    voksensegmentet for både kvinner og menn. Konseptet og forretningsmodellen er basert på
-    medlemskap, hvor hvert medlem betaler en fast månedlig avgift. Som del av et medlemskap vil
-    kundene/brukerne få fri tilgang til et gitt antall plagg, som reserveres og leveres hjem. 
-    <br>
-    Etter endt
-    leieperiode returneres plaggene tilbake til KLEDELI, som kvalitetssjekker dem og evt. reparer dem før de
-    på nytt kan leies ut. Plaggene som KLEDELI har i sitt sortiment, oppbevares og distribueres ut fra et lager
-    i Bergen. Kundene til KLEDELI styrer alt fra en egen APP som KLEDELI er i ferd med å få utviklet hos et
-    ekstern IT-selskap. Ved bruk av KLEDELI sin App kan kundene administrere sitt medlemskap, bestille
-    plagg samt administrere uthenting og retur av forsendelser med plagg.</p>
-</div>
-<div class="faq">
-  <h1>Ofte stilte Spørsmål</h1>
-    <b>Hvis jeg liker klærne, kan jeg velge å betale ekstra for å beholde dem?</b>
-    <br>
-    Nei, det kan du dessverre ikke da dette går i mot vår bærekraftsvisjon.
-    <br>
-    <br>
-    <b>Kommer dere til å utvide til andre steder, for eksempel Oslo eller Stavanger?</b>
-    <br>
-    Vi har ingen planer for videre utvidelse av våre leveranse områder nå for øyeblikket.
-    <br>
-    <br>
-    <b>Synes dere ikke det er rart å leie ut "brukte" truser og boxere? Spesielt fra barn?</b>
-    <br>
-    Vi har en visjon om å redusere kasting av hele klær i våre lokalsamfunn til 0. Dette er vår bærekraftsvisjon.
-    <br>
-    <br>
-    <b>Hvordan får jeg på meg en "Goblin Mail"? Jeg har prøvd i timesvis, men den er liksom for liten??</b>
-    <br>
-    Vi forstår det er kjedelig å ikke få på seg de klærne en ønsker, men vi er her for å helpe så godt vi kan.
-    <br>
-    For å kunne ta på deg en Goblin Mail trenger du en såkalt "Goblin Potion".
-    <br> 
-    Det kreves en del ferdigheter, oppdrag og objekter for å kunne anskaffe denne. 
-    <br>
-    <br>
-    <a href="https://oldschool.runescape.wiki/w/Land_of_the_Goblins"><b>Se liste over krav her!</b></a>
-</div>
-</div>
-</body>
+  <body>
+  
+    <!--
+      Start på navbar
+    -->
+    <div class="navbar" id="mynavbar">
+      
+      <!--
+        Logo / hjemknapp
+      -->
+      <div class="logobutton">
+        <a href="index.html">
+          <img
+          src="images/KLEDI.png"
+          width="45"
+          height="45"
+          id="logo"
+          alt="Logo image"
+          style="float: left" >
+        </a>
+      </div>
+
+      <!--
+        Dropdown for Innertøy, Yttertøy og Undertøy
+      -->
+      <div class="dropdown">
+        <button class="dropbtn"
+          onClick="location.href='sortiment.html'">Vårt Sortiment
+          <i class="fa fa-caret-down"></i>
+        </button>
+        
+        <div class="dropdown-content">
+          <a href="sortiment1.html">Innertøy</a>
+          <a href="sortiment2.html">Yttertøy</a>
+          <a href="sortiment3.html">Undertøy</a>
+        </div>
+      </div>
+    
+      <!--
+        Dropdown for abonnementer
+      -->
+      <div class="dropdown">
+        <button class="dropbtn"
+          onClick="location.href='Abonnement.html'">Abonnementer
+          <i class="fa fa-caret-down"></i>
+        </button>
+      
+        <div class="dropdown-content">
+          <a href="abonnement.html#abo1">3 Plagg</a>
+          <a href="abonnement.html#abo2">5 Plagg</a>
+          <a href="abonnement.html#abo3">8 Plagg</a>
+          <a href="abonnement.html#abo4">10 Plagg</a>
+          <a href="abonnement.html#abo5">?? Plagg</a>
+        </div>
+      </div>
+      
+      <!--
+        Dropdown for delivery 
+      -->
+      <div class="dropdown">
+        <button class="dropbtn"
+          onClick="location.href='about.html'">Om oss
+          <i class="fa fa-caret-down"></i>
+        </button>
+      
+        <div class="dropdown-content">
+          <a href="delivery.html">Leveranse</a>
+        </div>
+      </div>
+
+      <!--
+        Innlogging test side (fungerer ikke, med vilje)
+      -->
+      <a href="test.html">Innlogging</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="responsiveNav()"
+        >&#9776;
+      </a>
+    </div>
+
+    <!--
+      Header image
+    -->
+    <div class="header-image">
+      <img class="header-image-jpg" src="Images\robert-collins-tvc5imO5pXk-unsplash3.jpg" alt="Standard Header Bilde">
+      <div class="header-text">
+        <h1 style ="color:white">KLEDELI</h1>
+      </div>
+    </div>
+
+    <div class="about">
+      <h1>Vår visjon:</h1>
+      <p>
+        Fokuset på miljø og bærekraft er tiltakende blant bedrifter og forbrukere i 2023. Som forbrukere blir vi
+        mer bevist på hva vi kjøper, at produkter og tjenester har et positivt eller nøytralt miljøbidrag, og et
+        bærekraftig fundament.
+      
+        <br>
+        Som del av dette blir vi mer opptatt av å gjenbruke og dele, fremfor å kjøpe nytt. Å kjøpe nytt kan være
+        kostbart, og en stor andel av det som produseres av varer kastes før det er utslitt eller på andre måter
+        ikke er brukbart lenger. Som et eksempel så refereres det i en rapport fra Nosus fra 2020 at norske
+        klesforhandlere sitter igjen med minst 700 tonn årlig av klær og tekstiler som ikke blir solgt (Watson et
+        al. 2020). 
+      
+        <br>
+        I kjølvannet av dette vokser det frem nye produkter og tjenester innenfor det som omtales
+        som delingsøkonomien. Noen eksempler på selskap og tjenester som operer innenfor
+        delingsøkonomien er Nabobil, Kruser, Fjong og Parkdressen.no
+        Selskapet KLEDELI er en oppstartsbedrift i Bergen som planlegger utleie av klær i Norge. I første omgang
+        vil KLEDELI tilby leie av klær til barn i alderen 0 til 12 år. Senere vil de utvide til også å dekke ungdom og
+        voksensegmentet for både kvinner og menn. Konseptet og forretningsmodellen er basert på
+        medlemskap, hvor hvert medlem betaler en fast månedlig avgift. Som del av et medlemskap vil
+        kundene/brukerne få fri tilgang til et gitt antall plagg, som reserveres og leveres hjem. 
+      
+        <br>
+        Etter endt
+        leieperiode returneres plaggene tilbake til KLEDELI, som kvalitetssjekker dem og evt. reparer dem før de
+        på nytt kan leies ut. Plaggene som KLEDELI har i sitt sortiment, oppbevares og distribueres ut fra et lager
+        i Bergen. Kundene til KLEDELI styrer alt fra en egen APP som KLEDELI er i ferd med å få utviklet hos et
+        ekstern IT-selskap. Ved bruk av KLEDELI sin App kan kundene administrere sitt medlemskap, bestille
+        plagg samt administrere uthenting og retur av forsendelser med plagg.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h1>Ofte stilte Spørsmål</h1>
+
+      <!--FAQ 1-->
+      <b>
+        Hvis jeg liker klærne, kan jeg velge å betale ekstra for å beholde dem?
+      </b>
+      <br>
+        Nei, det kan du dessverre ikke da dette går i mot vår bærekraftsvisjon.
+      <br>
+      
+      <br>
+
+      <!--FAQ 2-->
+      <b>
+        Kommer dere til å utvide til andre steder, for eksempel Oslo eller Stavanger?
+      </b>
+      <br>
+        Vi har ingen planer for videre utvidelse av våre leveranse områder nå for øyeblikket.
+      <br>
+      <br>
+
+      <!--FAQ 3-->
+      <b>
+        Synes dere ikke det er rart å leie ut "brukte" truser og boxere? Spesielt fra barn?
+      </b>
+      <br>
+        Vi har en visjon om å redusere kasting av hele klær i våre lokalsamfunn til 0. Dette er vår bærekraftsvisjon.
+      <br>
+      <br>
+
+      <!--Secret side quest-->
+      <b>
+        Hvordan får jeg på meg en "Goblin Mail"? Jeg har prøvd i timesvis, men den er liksom for liten??
+      </b>
+
+      <br>
+      Vi forstår det er kjedelig å ikke få på seg de klærne en ønsker, men vi er her for å hjelpe så godt vi kan.
+      
+      <br>
+      For å kunne ta på deg en Goblin Mail trenger du en såkalt "Goblin Potion".
+      
+      <br> 
+      Det kreves en del ferdigheter, oppdrag og objekter for å kunne anskaffe denne. 
+      
+      <br>
+      <br>
+      
+      <a href="https://oldschool.runescape.wiki/w/Land_of_the_Goblins">
+        <b>
+          Se liste over krav her!
+        </b>
+      </a>
+    </div>
+  </body>
 </html>

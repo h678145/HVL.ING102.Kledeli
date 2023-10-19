@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="nb">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hjem - KLEDELI</title>
-<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-<script src="./js/responsivenav.js"></script>
-<link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-<!-- Start på navbar-->
-<div class="navbar" id="mynavbar">
-<div class="logobutton">
-<a href="index.html">
-<img
-src="images/KLEDI.png"
-width="45"
-height="45"
-id="logo"
-alt="Logo image"
-style="float: left" >
-</a>
-</div>
-<div class="dropdown">
-<button class="dropbtn"
-onClick="location.href='sortiment.html'">Vårt Sortiment
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content">
-<a href="sortiment1.html">Innertøy</a>
-<a href="sortiment2.html">Yttertøy</a>
-<a href="sortiment3.html">Undertøy</a>
-</div>
-</div>
-<div class="dropdown">
-<button class="dropbtn"
-onClick="location.href='Abonnement.html'">Abonnementer
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content">
-<a href="abonnement.html#abo1">3 Plagg</a>
-<a href="abonnement.html#abo2">5 Plagg</a>
-<a href="abonnement.html#abo3">8 Plagg</a>
-<a href="abonnement.html#abo4">10 Plagg</a>
-<a href="abonnement.html#abo5">?? Plagg</a>
-</div>
-</div>
-<div class="dropdown">
-<button class="dropbtn"
-onClick="location.href='about.html'">Om oss
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content">
-<a href="delivery.html">Leveranse</a>
-</div>
-</div>
-<a href="test.html">Innlogging</a>
-<a
-href="javascript:void(0);"
-style="font-size: 15px"
-class="icon"
-onclick="responsiveNav()"
->&#9776;</a
->
-</div>
-<!-- Slutt på navbar
-Start på header-image -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hjem - KLEDELI</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="./js/responsivenav.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+
+    <!--
+      Start på navbar
+    -->
+    <div class="navbar" id="mynavbar">
+      
+      <!--
+        Logo / hjemknapp
+      -->
+      <div class="logobutton">
+        <a href="index.html">
+          <img
+          src="images/KLEDI.png"
+          width="45"
+          height="45"
+          id="logo"
+          alt="Logo image"
+          style="float: left" >
+        </a>
+      </div>
+
+      <!--
+        Dropdown for Innertøy, Yttertøy og Undertøy
+      -->
+      <div class="dropdown">
+        <button class="dropbtn"
+          onClick="location.href='sortiment.html'">Vårt Sortiment
+          <i class="fa fa-caret-down"></i>
+        </button>
+        
+        <div class="dropdown-content">
+          <a href="sortiment1.html">Innertøy</a>
+          <a href="sortiment2.html">Yttertøy</a>
+          <a href="sortiment3.html">Undertøy</a>
+        </div>
+      </div>
+    
+    <!--
+      Dropdown for abonnementer
+    -->
+      <div class="dropdown">
+        <button class="dropbtn"
+          onClick="location.href='Abonnement.html'">Abonnementer
+          <i class="fa fa-caret-down"></i>
+        </button>
+      
+        <div class="dropdown-content">
+          <a href="abonnement.html#abo1">3 Plagg</a>
+          <a href="abonnement.html#abo2">5 Plagg</a>
+          <a href="abonnement.html#abo3">8 Plagg</a>
+          <a href="abonnement.html#abo4">10 Plagg</a>
+          <a href="abonnement.html#abo5">?? Plagg</a>
+        </div>
+      </div>
+      
+      <!--
+        Dropdown for delivery 
+      -->
+      <div class="dropdown">
+        <button class="dropbtn"
+          onClick="location.href='about.html'">Om oss
+          <i class="fa fa-caret-down"></i>
+        </button>
+      
+        <div class="dropdown-content">
+          <a href="delivery.html">Leveranse</a>
+        </div>
+      </div>
+
+      <!--
+        Innlogging test side (fungerer ikke, med vilje)
+      -->
+      <a href="test.html">Innlogging</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="responsiveNav()"
+        >&#9776;
+      </a>
+    </div>
+
+    <!--
+      Slutt på navbar
+
+      Start på header-image
+    -->
     <div class="header-image">
       <img
         class="header-image-jpg"
@@ -75,9 +107,18 @@ Start på header-image -->
         <h1>KLEDELI</h1>
       </div>
     </div>
-<!--Slutt på header-image -->
+
+    <!--
+      Slutt på header-image
+      Start på abonnomenter
+    -->
     <h2>Våre abonnement:</h2>
+
     <div class="abonnement">
+
+      <!--
+        3 plagg i 3 måneder
+      -->
       <div class="abonnement-boks">
         <strong>3 plagg</strong>
         <p class="abonnement-tekst">
@@ -88,10 +129,14 @@ Start på header-image -->
           type="button"
           class="lesmer"
           onclick="location.href='abonnement.html#abo1'"
-        >
+          >
           Les mer
         </button>
       </div>
+      
+      <!--
+        5 plagg i 3 måneder
+      -->
       <div class="abonnement-boks">
         <strong>5 plagg</strong>
         <p class="abonnement-tekst">
@@ -102,10 +147,14 @@ Start på header-image -->
           type="button"
           class="lesmer"
           onclick="location.href='abonnement.html#abo2'"
-        >
+          >
           Les mer
         </button>
       </div>
+
+      <!--
+        8 plagg i 3 måneder
+      -->
       <div class="abonnement-boks">
         <strong>8 plagg</strong>
         <p class="abonnement-tekst">
@@ -116,10 +165,14 @@ Start på header-image -->
           type="button"
           class="lesmer"
           onclick="location.href='abonnement.html#abo3'"
-        >
+          >
           Les mer
         </button>
       </div>
+  
+      <!--
+        10 plagg i 3 måneder
+      -->
       <div class="abonnement-boks">
         <strong>10 plagg</strong>
         <p class="abonnement-tekst">
@@ -130,25 +183,30 @@ Start på header-image -->
           type="button"
           class="lesmer"
           onclick="location.href='abonnement.html#abo4'"
-        >
+          >
           Les mer
         </button>
       </div>
+      
+      <!--
+        ?? plagg i 3 måneder
+      -->
       <div class="abonnement-boks">
-        <strong>? plagg</strong>
+        <strong>?? plagg</strong>
         <p class="abonnement-tekst">
           <em>Fri tilgang til ? utvalgte plagg i opptil 3 måneder</em>
         </p>
+        
         <p class="abonnement-pris">Kr ???,- per måned</p>
         <button
           type="button"
           class="lesmer"
           onclick="location.href='abonnement.html#abo5'"
-       >
-          Les mer
+          >Les mer
         </button>
       </div>
     </div>
+    
     <h2>Velg et abonnement for mer informasjon</h2>
   </body>
 </html>

@@ -1,197 +1,500 @@
-@import "./font-awesome-4.7.0/css/font-awesome.min.css";
 body {
-background-color: #fdf9e1;
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
+  background-color: #fdf9e1;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
-body, html {
-    height: 100%;
-}
+
+body,
 html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  height: 100%;
+}
+
+
 .dark-mode {
-    background-color: rgb(32, 43, 85);
-    color: #333;
+  background-color: rgb(32, 43, 85);
+  color: #333;
 }
+/*start navbar*/
 .navbar {
-min-height:46px;
-background-color: #fdf9e1;
-position: sticky;
-z-index: 1;
-top: 0;
+  min-height: 46px;
+  background-color: #fdf9e1;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
+
 .navbar a {
-float: left;
-display: block;
-font-size: 16px;
-color: #333;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  float: left;
+  display: block;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.logobutton a{
-padding:0;
+
+.logobutton a {
+  padding: 0;
 }
+
 .navbar .icon {
-    display: none;
+  display: none;
 }
+
 .dropdown {
-float: left;
-position:relative;
+  float: left;
+  position: relative;
 }
+
 .dropdown .dropbtn {
-font-size: 16px;
-border: none;
-outline: none;
-color: #333;
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit;
-margin: 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #333;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
+
 .dropbtn a {
-padding: 0px 0px;
+  padding: 0px 0px;
 }
-.navbar a:hover, .dropdown:hover .dropbtn {
-background-color: #ddd;
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
 }
+
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #fdf9e1;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #fdf9e1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
+
 .dropdown-content a {
-float: none;
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
+
 .dropdown-content a:hover {
-background-color: #ddd;
+  background-color: #ddd;
 }
+
 .dropdown:hover .dropdown-content {
-display: block;
+  display: block;
 }
+
 @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child), .dropdown .dropbtn {
-      display: none;
-    }
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
+
+  .navbar a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
   }
-  
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .navbar.responsive .dropdown {float: none;}
-    .navbar.responsive .dropdown-content {position: relative;}
-    .navbar.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-.header-image{
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar.responsive .dropdown {
+  float: none;
+}
+
+.navbar.responsive .dropdown-content {
+  position: relative;
+}
+
+.navbar.responsive .dropdown .dropbtn {
+  display: block;
   width: 100%;
-  size: 10%;
-  background-position: left;
+  text-align: left;
+}
+/*slutt navbar*/
+.header-image {
+  height: 50vh;
+  width: 100vw;
+  background: url(images/robert-collins-tvc5imO5pXk-unsplash3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.header-image-jpg{
-    width: 100%;
-    position: relative;
+.header-image-jpg {
+  filter: brightness(60%);
+  width: 100vw;
+  position: absolute;
+  min-height: 50vh;
+  min-width: fit-content;
+  overflow: hidden;
 }
 
 
 .header-text {
-  text-align: center;
+  position: relative;
+  margin: 0 auto;
   font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
+  justify-content: center;
+  align-items: center;
 }
-.abonnement{
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-    .abonnement-boks{
-        text-align: center;
-        font-size: 20px;
-        padding: 10px;
-        float: left;
-        margin: 5% auto;
-        min-width: 100px;
-        height: 300px;
-        width:15%;
-        background-color: rgb(250, 200, 70);
-        border-radius: 25px;
-    }
- 
-   .abonnement-pris{
-        font-size: 20px;
-    }    .abonnement-tekst{
-        margin: 20% 20%;
-        font-size: 16px;
-    }
-    .lesmer{
-        display: inline-block;
-        margin: auto auto;
-        height: 40px;
-        bottom: 10px;
-    }
-    .column{
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-    .column-box{
-        text-align: center;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-        font-size: 20px;
-        padding: 10px;
-        float: center;
-        margin: 5% auto;
-        min-width: 420px;
-        height: auto;
-        width:15%;
-        background-color: rgb(250, 200, 70);
-        border-radius: 25px;
-    }
-h1, h2{
-        text-align: center;
+
+.abonnement {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-@media screen and (max-width: 1260px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
+
+.abonnement-boks {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px auto;
+  min-width: 150px;
+  width: 15%;
+  height: 300px;
+  background-color: rgb(250, 200, 70);
+  border-radius: 25px;
 }
+
+.abonnement-pris {
+  font-size: 20px;
+}
+
+.abonnement-tekst {
+  margin: 20% 20%;
+  font-size: 16px;
+}
+
+.lesmer {
+  display: inline-block;
+  margin: auto auto;
+  height: 40px;
+  bottom: 10px;
+}
+
+
+h2 {
+  text-align: center;
+}
+/*start leveringsbokser*/
+.column {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.column-box {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  float: left;
+  margin: 5% auto;
+  min-width: 420px;
+  height: auto;
+  width: 15%;
+  background-color: rgb(250, 200, 70);
+  border-radius: 25px;
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #333444;
+  color: white;
+  overflow:hidden;
+}
+.faq {
+  padding: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+      }
+/*slutt leveringsbokser*/
+/*Sortiment*/
+
+  
+  button {
+  font-size: 20px;
+  border-radius: 8px;
+  }
+  
+  
+  #FIB {
+  position: absolute;
+  right: 200px;
+  top: 1100px;
+  }
+  
+  
+  #SB {
+  position: absolute;
+  right: 480px;
+  top: 1100px;
+  }
+  
+  
+  #TB {
+  position: absolute;
+  right: 850px;
+  top: 1100px;
+  }
+  
+  
+  #FB {
+  position: absolute;
+  right: 1200px;
+  top: 1100px;
+  }
+  
+  
+  #t1 {
+  position: absolute;
+  right: 650px;
+  top: 700px;
+  }
+  
+  
+  #t2 {
+  position: absolute;
+  right: 650px;
+  top: 1200px;
+  }
+  
+  
+  #B {
+  position: absolute;
+  top: 1550px;
+  right: 300px;
+  }
+  
+  
+  #G {
+  position: absolute;
+  top: 1550px;
+  right: 670px;
+  }
+  
+  
+  #S {
+  position: absolute;
+  top: 1550px;
+  right: 1100px;
+  }
+  
+  
+  #jakkebildet {
+  position: absolute;
+  height: 240px;
+  right: 120px;
+  top: 830px;
+  }
+  
+  
+  #hodeplagg {
+  position: absolute;
+  height: 240px;
+  right: 460px;
+  top: 850px;
+  }
+  
+  
+  #votter {
+  position: absolute;
+  height: 200px;
+  right: 800px;
+  top: 870px;
+  }
+  
+  
+  #parkdress {
+  position: absolute;
+  height: 240px;
+  right: 1125px;
+  top: 850px;
+  }
+  
+  
+  #t3 {
+  position: absolute;
+  right: 650px;
+  top: 1650px;
+  }
+  
+  
+  #truser {
+  position: absolute;
+  right: 1230px;
+  top: 2000px;
+  }
+  
+  
+  #Skjorte {
+  position: absolute;
+  height: 200px;
+  right: 1025px;
+  top: 1320px;
+  }
+  
+  
+  #UllGenser {
+  position: absolute;
+  right: 930px;
+  top: 2000px;
+  }
+  
+  
+  #stilongs {
+  position: absolute;
+  top: 2000px;
+  right: 650px;
+  }
+  
+  
+  #stilongsbildet {
+  position: absolute;
+  top: 1780px;
+  right: 620px;
+  height: 200px;
+  }
+  
+  
+  #t-skjorte {
+  position: absolute;
+  top: 2000px;
+  right: 400px;
+  font-size: 18px;
+  }
+  
+  
+  #bodyplagg {
+  position: absolute;
+  top: 2000px;
+  right: 190px;
+  font-size: 18px;
+  }
+  
+  
+  #truserbildet {
+  position: absolute;
+  top: 1800px;
+  right: 1160px;
+  height: 170px;
+  }
+  
+  
+  #ullgenser {
+  position: absolute;
+  top: 1800px;
+  right: 895px;
+  height: 185px;
+  }
+  
+  
+  #genser {
+  position: absolute;
+  top: 1320px;
+  right: 610px;
+  height: 220px;
+  }
+  
+  
+  #bukser {
+  position: absolute;
+  top: 1320px;
+  right: 250px;
+  height: 220px;
+  width: 160px;
+  }
+  
+  
+  #tskjortee {
+  position: absolute;
+  top: 1820px;
+  right: 345px;
+  height: 170px;
+  }
+  
+  
+  #bodybildet {
+  position: absolute;
+  top: 1800px;
+  right: 100px;
+  height: 190px;
+  }
+
+  .ytter {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  /* slutt sortiment*/
+  /* start abonnement*/
+div.abonnement-stil {
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  margin-top: 150px;
+  width: 40%;
+  min-height: 90%;
+  min-width: 600px;
+  border: 3px solid black;
+  position: relative;
+}
+		
+.aboknapp{
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 50%;
+  bottom: 8%;
+}
+		 
+.tekst{
+  margin: 8% 8%;
+  font-size: 26px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+/*slutt abonnement*/

@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kledeli</title>
-  <link rel="icon" href="favicon.ico">
+  <title>Sortiment - KLEDELI</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" >
   <script src="./js/responsiveNav.js"></script>
   <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
 
-
-  <!--Lars/Lasse-->
+  <!--
+    Start på navbar
+  -->
   <div class="navbar" id="mynavbar">
+    
+    <!--
+      Logo / hjemknapp
+    -->
     <div class="logobutton">
       <a href="index.html">
-        <img src="images/KLEDI.png" width="45" height="45" id="logo" alt="Logo image" style="float: left">
+        <img
+        src="images/KLEDI.png"
+        width="45"
+        height="45"
+        id="logo"
+        alt="Logo image"
+        style="float: left" >
       </a>
     </div>
+
+    <!--
+      Dropdown for Innertøy, Yttertøy og Undertøy
+    -->
     <div class="dropdown">
-      <button class="dropbtn" onClick="location.href='sortiment.html'">Vårt Sortiment
+      <button class="dropbtn"
+        onClick="location.href='sortiment.html'">Vårt Sortiment
         <i class="fa fa-caret-down"></i>
       </button>
+      
       <div class="dropdown-content">
         <a href="sortiment1.html">Innertøy</a>
         <a href="sortiment2.html">Yttertøy</a>
         <a href="sortiment3.html">Undertøy</a>
       </div>
     </div>
+  
+  <!--
+    Dropdown for abonnementer
+  -->
     <div class="dropdown">
-      <button class="dropbtn" onClick="location.href='Abonnement.html'">Abonnementer
+      <button class="dropbtn"
+        onClick="location.href='Abonnement.html'">Abonnementer
         <i class="fa fa-caret-down"></i>
       </button>
+    
       <div class="dropdown-content">
         <a href="abonnement.html#abo1">3 Plagg</a>
         <a href="abonnement.html#abo2">5 Plagg</a>
@@ -42,17 +65,35 @@
         <a href="abonnement.html#abo5">?? Plagg</a>
       </div>
     </div>
+    
+    <!--
+      Dropdown for delivery 
+    -->
     <div class="dropdown">
-      <button class="dropbtn" onClick="location.href='about.html'">Om oss
+      <button class="dropbtn"
+        onClick="location.href='about.html'">Om oss
         <i class="fa fa-caret-down"></i>
       </button>
+    
       <div class="dropdown-content">
         <a href="delivery.html">Leveranse</a>
       </div>
     </div>
+
+    <!--
+      Innlogging test side (fungerer ikke, med vilje)
+    -->
     <a href="test.html">Innlogging</a>
-    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="responsiveNav()">&#9776;</a>
+    <a
+      href="javascript:void(0);"
+      style="font-size: 15px"
+      class="icon"
+      onclick="responsiveNav()"
+      >&#9776;
+    </a>
   </div>
+
+
   <div class="header-image">
     <img class="header-image-jpg" src="./images/robert-collins-tvc5imO5pXk-unsplash3.jpg"
       alt="Happy children playing outside">
@@ -60,7 +101,10 @@
       <h1>KLEDELI</h1>
     </div>
   </div>
-  <!--images-->
+
+  <!--
+    Images
+  -->
   <div class="ytter">
     <img id="jakkebildet" src="Images/jakkebildet.png" alt="jakke">
     <img id="hodeplagg" src="Images/hodeplagg.png" alt="lue">
@@ -74,8 +118,9 @@
     <img id="bukser" src="Images/bukser.png" alt="bukser">
     <img id="tskjortee" src="Images/tskjorte.png" alt="t-skjorte">
 
-
-    <!--buttons and hyperlinks-->
+    <!--
+      Buttons and hyperlinks
+    -->
     <button id="FIB" onClick="location.href='jakke.html'">Jakke</button>
     <button id="SB" onClick="location.href='hodeplagg.html'">Hodeplagg </button>
     <button id="TB" onClick="location.href='votter.html'">Votter </button>
@@ -92,10 +137,9 @@
     <button id="t-skjorte" onClick="location.href='t-skjorte.html'"> T-Skjorte</button>
     <button id="bodyplagg" onClick="location.href='body.html'">Body</button>
 
-
-
-
-    <!--titles-->
+    <!--
+      Titles
+    -->
     <h1 id="t1"><i>Ytterklær</i></h1>
     <h1 id="t2"><i>Innerklær</i></h1>
     <h1 id="t3"><i>Undertøy</i></h1>
