@@ -22,4 +22,8 @@ window.onclick = function (e) {
           myDropdown.classList.remove('show');
       }
   }
+}
+
+function showMessage() {
+  document.getElementById("error").style.display = "block";
 };

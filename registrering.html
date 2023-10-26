@@ -110,103 +110,34 @@
 
     <!--
       Slutt på header-image
-      Start på abonnomenter
+      Start på registrering
     -->
-    <h2>Våre abonnement:</h2>
+	
+   <h2 id="registrering" class="tittel1">Registrering:</h2>
 
-    <div class="abonnement">
-
-      <!--
-        3 plagg i 3 måneder
-      -->
-      <div class="abonnement-boks">
-        <strong>3 plagg</strong>
-        <p class="abonnement-tekst">
-          <em>Fri tilgang til 3 utvalgte plagg i opptil 3 måneder</em>
-        </p>
-        <p class="abonnement-pris">Kr 500,- per måned</p>
-        <button
-          type="button"
-          class="lesmer"
-          onclick="location.href='abonnement.html#abo1'"
-          >
-          Les mer
-        </button>
-      </div>
-      
-      <!--
-        5 plagg i 3 måneder
-      -->
-      <div class="abonnement-boks">
-        <strong>5 plagg</strong>
-        <p class="abonnement-tekst">
-          <em>Fri tilgang til 5 utvalgte plagg i opptil 3 måneder</em>
-        </p>
-        <p class="abonnement-pris">Kr 700,- per måned</p>
-        <button
-          type="button"
-          class="lesmer"
-          onclick="location.href='abonnement.html#abo2'"
-          >
-          Les mer
-        </button>
-      </div>
-
-      <!--
-        8 plagg i 3 måneder
-      -->
-      <div class="abonnement-boks">
-        <strong>8 plagg</strong>
-        <p class="abonnement-tekst">
-          <em>Fri tilgang til 8 utvalgte plagg i opptil 3 måneder</em>
-        </p>
-        <p class="abonnement-pris">Kr 900,- per måned</p>
-        <button
-          type="button"
-          class="lesmer"
-          onclick="location.href='abonnement.html#abo3'"
-          >
-          Les mer
-        </button>
-      </div>
-  
-      <!--
-        10 plagg i 3 måneder
-      -->
-      <div class="abonnement-boks">
-        <strong>10 plagg</strong>
-        <p class="abonnement-tekst">
-          <em>Fri tilgang til 10 utvalgte plagg i opptil 3 måneder</em>
-        </p>
-        <p class="abonnement-pris">Kr 1200,- per måned</p>
-        <button
-          type="button"
-          class="lesmer"
-          onclick="location.href='abonnement.html#abo4'"
-          >
-          Les mer
-        </button>
-      </div>
-      
-      <!--
-        ?? plagg i 3 måneder
-      -->
-      <div class="abonnement-boks">
-        <strong>?? plagg</strong>
-        <p class="abonnement-tekst">
-          <em>Fri tilgang til ? utvalgte plagg i opptil 3 måneder</em>
-        </p>
-        
-        <p class="abonnement-pris">Kr ???,- per måned</p>
-        <button
-          type="button"
-          class="lesmer"
-          onclick="location.href='abonnement.html#abo5'"
-          >Les mer
-        </button>
-      </div>
+	  <p class="overtekst">
+        <em>
+           Vennligst opprett bruker
+        </em>
+      </p>
+	  
+    <div class="loginStil">
+      <form>
+	   <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br>
+	   <input type="text" id="lastname" name="lastname" placeholder="Etternavn"><br>
+	   <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer"><br>
+       <input type="email" id="email" name="email" placeholder="E-post"><br>
+       <input type="password" id="pwd" name="pwd" placeholder="Passord"><br>
+	   <input type="password" id="pwd2" name="pwd2" placeholder="Bekreft passord"><br>
+	   <input class="registreringKnapp1" type="checkbox" id="remember1" name="remember">
+       <label for="remember1">Jeg har lest og forstått personvernserklæringen</label><br>
+	   <input class="registreringKnapp2" type="checkbox" id="remember2" name="remember2">
+       <label for="remember2">Jeg samtykker til at mine personopplysninger lagres</label><br>
+       </form>
+ 
+      <button class="loginknapp" onclick="showMessage()">Registrer bruker</button>  
     </div>
-    
-    <h2>Velg et abonnement for mer informasjon</h2>
   </body>
 </html>
+    <!--
+      Slutt registrering

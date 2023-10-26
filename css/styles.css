@@ -498,3 +498,98 @@ div.abonnement-stil {
   word-wrap: break-word;
 }
 /*slutt abonnement*/
+
+/*start login*/
+
+div.loginStil {
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  width: 40%;
+  min-height: 90%;
+  min-width: 600px;
+  position: relative;
+}
+
+input[type=email], input[type=password] {
+  width: 70%;
+  padding: 12px; 
+  margin: 10px 0;
+}
+
+.overtekst{
+  text-align: center;
+  font-size: 18px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+.tittel1{
+  text-align: center;
+  overflow: auto;
+  word-wrap: break-word;
+  margin-top: 5%;
+}
+
+.tittel2{
+  text-align: center;
+  overflow: auto;
+  word-wrap: break-word;
+  margin-top: -20%;
+}
+
+.huskMeg{
+  margin-left: -58%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.loginknapp{
+  margin-top: 3%;
+  margin-bottom: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 50%;
+}
+
+.linje{
+  width: 70%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.9);
+}
+
+/*slutt login*/
+
+/*start registrering*/
+
+.registreringKnapp1{
+  margin-top: 3%;
+  margin-left: -18%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.registreringKnapp2{
+  margin-top: 3%;
+  margin-left: -13%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+input[type=password2], input[type=text], input[type=tel] {
+  width: 70%;
+  padding: 12px; 
+  margin: 10px 0;
+}
+
+/*slutt registrering*
