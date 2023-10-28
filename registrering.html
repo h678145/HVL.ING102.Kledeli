@@ -92,7 +92,7 @@
         >&#9776;
       </a>
     </div>
-    
+
     <!--
       Slutt på navbar
 
@@ -102,38 +102,42 @@
       <img
         class="header-image-jpg"
         src="./images/robert-collins-tvc5imO5pXk-unsplash3.jpg"
-        alt="Happy children playing outside"
-      >
+        alt="Happy children playing outside">
       <div class="header-text">
         <h1>KLEDELI</h1>
       </div>
     </div>
 
     <!--
-      Leveranse info
+      Slutt på header-image
+      Start på registrering
     -->
-    <h2>Leveranser fra oss kan hentes på utvalgte PostNord Pakkeautomater i de områdene hvor vi har dekning</h2>
-    <h2>Tilbakelevering skjer ved samme sted</h2>
-    
-    <!--
-      Maps lokasjoner: Bergen, Haugesund, Førde.
-    -->
-    <div class="column">
-      <div class="column-box">
-        <p>Pakkeboks Lokasjon i Bergen</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4479.202184385516!2d5.33561510170169!3d60.37109831031843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfeace6223393%3A0x63214955f30aac37!2sH%C3%B8gskulen%20p%C3%A5%20Vestlandet!5e0!3m2!1sen!2sno!4v1694470181462!5m2!1sen!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div> 
+	
+   <h2 id="registrering" class="tittel1">Registrering:</h2>
 
-      <div class="column-box">
-        <p>Pakkeboks Lokasjon i Haugesund</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24760.694003564644!2d5.23311057116464!3d59.39733522082364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463b9fb71b9ba8ed%3A0x9e52bb6d4282b6b7!2sStorasund%20post%20i%20butikk!5e0!3m2!1sen!2sno!4v1694468610642!5m2!1sen!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <div class="column-box">
-        <p>Pakkeboks Lokasjon i Førde</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2018.2744049521798!2d5.4731508123847865!3d59.61179348827392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463b843f9e992d01%3A0x9253eb4955393448!2sF%C3%B8rde%20i%20Hordaland%20Post%20i%20Butikk!5e0!3m2!1sen!2sno!4v1694470071294!5m2!1sen!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div> 
+	  <p class="overtekst">
+        <em>
+           Vennligst opprett bruker
+        </em>
+      </p>
+	  
+    <div class="loginStil">
+      <form>
+	   <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br>
+	   <input type="text" id="lastname" name="lastname" placeholder="Etternavn"><br>
+	   <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer"><br>
+       <input type="email" id="email" name="email" placeholder="E-post"><br>
+       <input type="password" id="pwd" name="pwd" placeholder="Passord"><br>
+	   <input type="password" id="pwd2" name="pwd2" placeholder="Bekreft passord"><br>
+	   <input class="registreringKnapp1" type="checkbox" id="remember1" name="remember">
+       <label for="remember1">Jeg har lest og forstått personvernserklæringen</label><br>
+	   <input class="registreringKnapp2" type="checkbox" id="remember2" name="remember2">
+       <label for="remember2">Jeg samtykker til at mine personopplysninger lagres</label><br>
+       </form>
+ 
+      <button class="loginknapp" onclick="showMessage()">Registrer bruker</button>  
     </div>
-
   </body>
 </html>
+    <!--
+      Slutt registrering
