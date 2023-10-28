@@ -247,221 +247,78 @@ h2 {
 /*slutt leveringsbokser*/
 /*Sortiment*/
 
+.title{
+  text-align: center;
+  margin-top: 130px;
+  overflow: hidden;
+ }
+
+.image-container ,.image-container2,.image-container3{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-content: space-around;
+}
+.image {
+  margin: 30px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bts {
+  margin-top: 30px;
+  align-content: center;
+  padding: 8px;
+}
+.bts:active{
+  transform: translateY(2px);
+}
+.title2,.title3{
+  text-align: center;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.image2{
+  text-align: center;
+  margin:30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+@media (max-width: 750px) {
+  .title, .title2 {
+    text-align: center;
+    margin-top: 20px; 
+    overflow: hidden;
+    
+  }
+  
+  .image-container, .image-container2 ,.image-container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .image,.image2 {
+    text-align: center;
+    margin: 10px;
+    width: 200px; 
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+  }
   
   button {
-  font-size: 20px;
-  border-radius: 8px;
-  }
-  
-  
-  #FIB {
-  position: absolute;
-  right: 200px;
-  top: 1100px;
-  }
-  
-  
-  #SB {
-  position: absolute;
-  right: 480px;
-  top: 1100px;
-  }
-  
-  
-  #TB {
-  position: absolute;
-  right: 850px;
-  top: 1100px;
-  }
-  
-  
-  #FB {
-  position: absolute;
-  right: 1200px;
-  top: 1100px;
-  }
-  
-  
-  #t1 {
-  position: absolute;
-  right: 650px;
-  top: 700px;
-  }
-  
-  
-  #t2 {
-  position: absolute;
-  right: 650px;
-  top: 1200px;
-  }
-  
-  
-  #B {
-  position: absolute;
-  top: 1550px;
-  right: 300px;
-  }
-  
-  
-  #G {
-  position: absolute;
-  top: 1550px;
-  right: 670px;
-  }
-  
-  
-  #S {
-  position: absolute;
-  top: 1550px;
-  right: 1100px;
-  }
-  
-  
-  #jakkebildet {
-  position: absolute;
-  height: 240px;
-  right: 120px;
-  top: 830px;
-  }
-  
-  
-  #hodeplagg {
-  position: absolute;
-  height: 240px;
-  right: 460px;
-  top: 850px;
-  }
-  
-  
-  #votter {
-  position: absolute;
-  height: 200px;
-  right: 800px;
-  top: 870px;
-  }
-  
-  
-  #parkdress {
-  position: absolute;
-  height: 240px;
-  right: 1125px;
-  top: 850px;
-  }
-  
-  
-  #t3 {
-  position: absolute;
-  right: 650px;
-  top: 1650px;
-  }
-  
-  
-  #truser {
-  position: absolute;
-  right: 1230px;
-  top: 2000px;
-  }
-  
-  
-  #Skjorte {
-  position: absolute;
-  height: 200px;
-  right: 1025px;
-  top: 1320px;
-  }
-  
-  
-  #UllGenser {
-  position: absolute;
-  right: 930px;
-  top: 2000px;
-  }
-  
-  
-  #stilongs {
-  position: absolute;
-  top: 2000px;
-  right: 650px;
-  }
-  
-  
-  #stilongsbildet {
-  position: absolute;
-  top: 1780px;
-  right: 620px;
-  height: 200px;
-  }
-  
-  
-  #t-skjorte {
-  position: absolute;
-  top: 2000px;
-  right: 400px;
-  font-size: 18px;
-  }
-  
-  
-  #bodyplagg {
-  position: absolute;
-  top: 2000px;
-  right: 190px;
-  font-size: 18px;
-  }
-  
-  
-  #truserbildet {
-  position: absolute;
-  top: 1800px;
-  right: 1160px;
-  height: 170px;
-  }
-  
-  
-  #ullgenser {
-  position: absolute;
-  top: 1800px;
-  right: 895px;
-  height: 185px;
-  }
-  
-  
-  #genser {
-  position: absolute;
-  top: 1320px;
-  right: 610px;
-  height: 220px;
-  }
-  
-  
-  #bukser {
-  position: absolute;
-  top: 1320px;
-  right: 250px;
-  height: 220px;
-  width: 160px;
-  }
-  
-  
-  #tskjortee {
-  position: absolute;
-  top: 1820px;
-  right: 345px;
-  height: 170px;
-  }
-  
-  
-  #bodybildet {
-  position: absolute;
-  top: 1800px;
-  right: 100px;
-  height: 190px;
-  }
-
-  .ytter {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
+    margin-top: 10px;}}
+    
   /* slutt sortiment*/
   /* start abonnement*/
 div.abonnement-stil {
