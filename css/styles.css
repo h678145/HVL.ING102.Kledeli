@@ -138,17 +138,16 @@ html {
   text-align: left;
 }
 /*slutt navbar*/
+/*start headerbilde*/
 .header-image {
   height: 50vh;
   width: 100vw;
-  background: url(images/robert-collins-tvc5imO5pXk-unsplash3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333444;
 }
 
 
@@ -211,6 +210,7 @@ html {
 h2 {
   text-align: center;
 }
+/*slutt headerbilde*/
 /*start leveringsbokser*/
 .column {
   position: relative;
@@ -360,18 +360,18 @@ div.abonnement-stil {
 /*start login*/
 
 div.loginStil {
+  display: flex;
   margin: auto;
   flex-direction: column;
   text-align: center;
   font-size: 15px;
   width: 40%;
-  min-height: 90%;
   min-width: 600px;
   position: relative;
 }
 
 input[type=email], input[type=password] {
-  width: 70%;
+  width: 100%;
   padding: 12px; 
   margin: 10px 0;
 }
@@ -393,7 +393,6 @@ input[type=email], input[type=password] {
   text-align: center;
   overflow: auto;
   word-wrap: break-word;
-  margin-top: -20%;
 }
 
 .huskMeg{
@@ -445,9 +444,44 @@ input[type="checkbox"] {
 }
 
 input[type=password2], input[type=text], input[type=tel] {
-  width: 70%;
+  width: 100%;
   padding: 12px; 
   margin: 10px 0;
 }
 
-/*slutt registrering*
+/*slutt registrering*/
+/*start footer*/
+footer{
+  display: flex;
+  margin-top: 30px;
+  padding: 5px;
+  background: #FAEFB1;
+  text-align: center;
+  font-size: 12px;
+  line-height: 0px;
+  color: #6a6a6a;
+}
+
+footer h3{
+  letter-spacing: 1px;
+  padding-bottom: 0px;
+}
+
+.kontakt{
+  width: 50vw;
+}
+
+.nav-footer{
+  width:50vw;
+}
+
+footer a{
+  display: table;
+  text-align: center;
+  padding: 7px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #6a6a6a;
+}
+
+/*slutt footer*/
