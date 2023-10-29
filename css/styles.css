@@ -6,7 +6,7 @@ body {
 
 body,
 html {
-  height: 100%;
+  height: auto;
 }
 
 
@@ -329,7 +329,8 @@ div.abonnement-stil {
   text-align: center;
   font-size: 40px;
   padding: 50px;
-  margin-top: 150px;
+  padding-bottom:90px;
+  margin-top: 50px;
   width: 40%;
   min-height: 90%;
   min-width: 600px;
