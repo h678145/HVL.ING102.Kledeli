@@ -123,11 +123,17 @@
 	  
     <div class="loginStil">
       <form>
+        <label for="firstname">Fornavn:</label>
 	   <input type="text" id="firstname" name="firstname" placeholder="Fornavn"><br>
+     <label for="lastname">Etternavn:</label>
 	   <input type="text" id="lastname" name="lastname" placeholder="Etternavn"><br>
+     <label for="telefon">Telefonnummer:</label>
 	   <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer"><br>
+     <label for="email">E-post:</label>
        <input type="email" id="email" name="email" placeholder="E-post"><br>
+       <label for="pwd">Passord:</label>
        <input type="password" id="pwd" name="pwd" placeholder="Passord"><br>
+       <label for="pwd2">Bekreft passord:</label>
 	   <input type="password" id="pwd2" name="pwd2" placeholder="Bekreft passord"><br>
 	   <input class="registreringKnapp1" type="checkbox" id="remember1" name="remember">
        <label for="remember1">Jeg har lest og forstått personvernserklæringen</label><br>
@@ -137,7 +143,35 @@
  
       <button class="loginknapp" onclick="showMessage()">Registrer bruker</button>  
     </div>
+    
+  <!--
+    Slutt registrering
+    Start footer
+  -->
+  <footer>
+    <nav class="nav-footer">
+      <h3>Navigasjon</h3>
+      <a href="/index.html">Hjem</a>     
+      <a href="/login.html">Logg inn</a>
+      <a href="/registrering.html">Registrer deg</a>
+      <a href="#top">Tilbake til toppen</a>
+    </nav>
+    <nav class="nav-footer">
+      <h3>Informasjon</h3>
+      <a href="/about.html">Om oss / FAQ</a> 
+      <a href="/sortiment.html">Sortiment</a> 
+      <a href="/abonnement.html">Abonnementer</a>
+      <a href="/delivery.html">Leveranser</a>      
+    </nav>
+    <div class="kontakt">
+      <h3>Kontakt oss</h3>
+      <a href="tel:004798765432">(+47) 98765432</a>
+      <a href="mailto:support@kledeli.no">support@kledeli.no</a>
+      <p>Kledelien 123</p>
+      <p>5005 Bergen</p>
+      <p>Norge</p>
+    </div>
+  </footer>
+  <!-- Slutt footer-->
   </body>
 </html>
-    <!--
-      Slutt registrering
