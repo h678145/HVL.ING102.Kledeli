@@ -13,7 +13,10 @@ function funcDropdown() {
   "use strict";
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
+function showMessage() {
+  "use strict";
+  document.getElementById("error").style.display = "block";
+}
 window.onclick = function (e) {
   "use strict";
   if (!e.target.matches('.dropbtn')) {
@@ -22,8 +25,4 @@ window.onclick = function (e) {
           myDropdown.classList.remove('show');
       }
   }
-}
-
-function showMessage() {
-  document.getElementById("error").style.display = "block";
 };
