@@ -164,7 +164,7 @@ html {
 .header-text {
   position: relative;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 8vh;
   color: white;
   justify-content: center;
   align-items: center;
@@ -333,14 +333,12 @@ div.abonnement-stil {
   margin-top: 50px;
   width: 40%;
   min-height: 90%;
-  min-width: 600px;
   border: 3px solid black;
   position: relative;
 }
 		
 .aboknapp{
   display: inline-block;
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -348,6 +346,7 @@ div.abonnement-stil {
   height: 40px;
   width: 50%;
   bottom: 8%;
+  position: relative;
 }
 		 
 .tekst{
@@ -367,7 +366,6 @@ div.loginStil {
   text-align: center;
   font-size: 15px;
   width: 40%;
-  min-width: 600px;
   position: relative;
 }
 
